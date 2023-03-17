@@ -1,0 +1,197 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+}
+
+
+.icon{
+    display: flex;
+    margin-top:250px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+}
+
+.icon-text,
+.watchlist-icon-text{
+    text-align: center;
+    font-weight: 800;
+    color: #2E2E2F;
+    font-size:1.125rem;
+}
+
+
+
+.watchlist-icon-text{
+    margin-top:250px;
+    color: #787878;
+}
+
+
+.add-movies{
+    display:flex;
+    justify-content: center;
+    align-items: center; /*center all the child element vertically*/
+}
+
+.add-movies p{
+    color: white;
+    font-size:0.875rem;
+}
+
+.add-icon{
+    width:20px;
+    height:20px;
+    padding-right:5px;
+}
+
+.top-contaner{
+    height:200px;
+
+}
+
+.top{
+    height:190px;
+    width:100%;
+    background-image: url("images/banner.png");
+    background-size:100%;
+    background-color: #000000;
+    position:absolute;
+}
+
+.top-text{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    color: white;
+    top:50px;
+}
+
+.title{
+    font-weight:900;
+
+}
+
+.my-watchlist,
+.search-movie{
+    font-weight: 800;
+    cursor:pointer;
+}
+
+.search{
+    position:relative;
+    top: 90px;
+    display:flex;
+    justify-content: center;
+}
+
+.search-input{
+    font-family: inherit;
+    font-size:0.875rem;
+    width:60%;
+    height:30px;
+    background-color: #2E2E2F;
+    color: #A5A5A5;
+    background-image: url("images/search.png");
+    background-repeat:no-repeat;
+    background-position: 10px center; /* add some spacing between the input bar and search img */
+    text-indent: 30px; /* add 5 pixels of space to the left of the placeholder text */
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px; 
+    border:none;
+}
+
+.search-btn{
+    font-family: inherit;
+    font-size:0.875rem;
+    color: white;
+    background-color: #4B4B4B;
+    width:100px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    border:none;
+    cursor:pointer;
+}
+
+
+
+
+
+.result-container{
+    color: white;
+    display:flex;
+    margin: 30px auto 20px auto;
+    justify-content: center;
+    width:450px;
+}
+
+.mov-image{
+    width:200px;
+    height:180px;
+    margin-right:20px;
+}
+
+/* move header */
+.mov-header{
+    display:flex;
+    align-items: center;
+}
+
+.mov-title{
+    font-size:1.125rem;
+}
+
+.mov-star{
+    width:10px;
+    height:10px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.mov-rate{
+    font-size:0.7rem;
+}
+
+/* end move header */
+
+
+/* move middle */
+.mov-middle{
+    display:flex;
+    align-items: center;
+}
+
+.minutes{
+    font-size:0.75rem;
+    padding-right:15px;
+}
+
+.authors{
+    font-size:0.75rem;
+    padding-right:15px;
+}
+
+.mov-add{
+    cursor:pointer;
+}
+
+
+.mov-wishText{
+    font-size:0.75rem;
+    padding-left: 5px;
+}
+
+.mov-desc{
+    margin-right:50px;
+    font-size:0.875rem;
+}
+/* end move middle */
+
+hr{
+    width:85%;
+    border-color: #000000; /*styling the hr color*/
+}
+
