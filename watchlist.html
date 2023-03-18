@@ -1,37 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-        <!--google font-->
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-         <!--viewport-->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    </head>
-    <body>
-        <div class="top-contaner">
-        <div class="top"></div>
-        <div class="top-text">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <!--google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="top-contaner">
+      <div class="top"></div>
+      <div class="top-text">
         <h1 class="title">My Watchlist</h1>
         <a href="index.html"><p class="search-movie">Search for movies</p></a>
+      </div>
+      <!--end top container-->
+    </div>
+    <div class="showing-result">
+      <div class="alert" id="alert">
+        <p class="watchlist-icon-text">
+          Your watchlist is looking a little empty...
+        </p>
+        <div class="add-movies">
+          <a href="index.html"><img class="add-icon" src="images/add.png" /></a>
+          <p>Let's add some movies!</p>
         </div>
-        <!--end top container-->
-</div>
-         <div class="showing-result">
-             <div class="alert" id="alert">
-             <p class="watchlist-icon-text">Your watchlist is looking a little empty...</p>
-             <div class="add-movies">
-             <img class="add-icon" src="images/add.png">
-             <p>Let's add some movies!</p>
-                 </div>
-                 </div>
-                 
-                              <div class="watchlist_hold" id="watchlist_hold">
-           
-              </div>
-             <!--end show result-->
-             </div>
+      </div>
 
-          
-        <script src="watchlist.js"></script>
-    </body>
+      <div class="watchlist_hold" id="watchlist_hold"></div>
+      <!--end show result-->
+    </div>
+
+    <script src="watchlist.js"></script>
+  </body>
 </html>

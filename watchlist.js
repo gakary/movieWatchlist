@@ -3,6 +3,19 @@ const watchDiv = document.getElementById("watchlist_hold");
 let watchList = [];
 const alertDiv = document.getElementById("alert");
 
+checkIsEmpty = () => {
+  const watchListData = localStorage.getItem("WatchListData");
+  if (watchListData && JSON.parse(watchListData).length > 0) {
+    console.log("localStorage not empty");
+    alertDiv.style.display = "none";
+  } else {
+    console.log("localStorage empty");
+    alertDiv.style.display = "block";
+  }
+};
+
+checkIsEmpty();
+
 document.addEventListener("click", (e) => {
   if (e.target.dataset.movie) {
     const button = e.target;
@@ -86,4 +99,5 @@ getWatchListMoviesDetails(myList);
 
 const renderWatchList = (html) => {
   watchDiv.innerHTML = html;
+  console.log("2");
 };

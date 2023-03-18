@@ -4,6 +4,26 @@ const searchBtn = document.getElementById("search-btn");
 const getSearch = document.getElementById("search-input");
 const movieDiv = document.getElementById("hold");
 let watchList = [];
+const alertDiv = document.getElementById("alert");
+alertDiv.style.display = "block";
+
+checkIsEmpty = () => {
+  /* create a vairable then assign the localStorage to this
+    because localStorage even empty the condition still checked not empty
+    so when have to use 2 value to check 
+    e.g watchListData = localStorage.getItem 
+        0 empty   =   [] not empty  it will going block */
+  const watchListData = localStorage.getItem("WatchListData");
+  if (watchListData && JSON.parse(watchListData).length > 0) {
+    console.log("localStorage not empty");
+    alertDiv.style.display = "none";
+  } else {
+    console.log("localStorage empty");
+    alertDiv.style.display = "block";
+  }
+};
+
+checkIsEmpty();
 
 document.addEventListener("click", (e) => {
   //only work for element have the data-movie
@@ -47,6 +67,7 @@ handleRemoveWatchList = (movie) => {
 };
 
 searchBtn.addEventListener("click", () => {
+  alertDiv.style.display = "none";
   //get user searching value & remove the spacing between
   let searchText = getSearch.value.trim();
   console.log(searchText);
