@@ -117,7 +117,10 @@ html, body {
 }
 
 
-
+a{
+    color: white;
+    text-decoration:none
+}
 
 
 .result-container{
@@ -128,8 +131,10 @@ html, body {
     width:450px;
 }
 
+
 .mov-image{
-    width:200px;
+    margin:15px auto;
+    min-width:150px;
     height:180px;
     margin-right:20px;
 }
@@ -195,3 +200,6 @@ hr{
     border-color: #000000; /*styling the hr color*/
 }
 
+.alert{
+    display:none;
+}
